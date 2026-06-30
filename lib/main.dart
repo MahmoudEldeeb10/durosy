@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => BottomNavCubit(),
       child: MaterialApp(
+        theme: ThemeData(fontFamily: 'Cairo'),
         locale: const Locale('ar'),
 
         supportedLocales: const [Locale('ar')],
