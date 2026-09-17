@@ -1,4 +1,4 @@
-import 'package:durosy/features/botton_nav_bar/presentation/manager/cubit/bottom_nav_cubit.dart';
+import 'package:durosy/features/bottom_nav_bar/presentation/manager/cubit/bottom_nav_cubit.dart';
 import 'package:durosy/features/home/presentation/view/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
