@@ -1,4 +1,5 @@
 import 'package:durosy/core/constants/app_colors.dart';
+import 'package:durosy/core/constants/styles.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -11,12 +12,19 @@ class HomeView extends StatelessWidget {
         appBar: AppBar(
           leading: Image.asset('assets/images/logo1.png'),
 
-          title: Text('الرئيسية'),
+          title: Text('الرئيسية', style: AppStyles.textStyle20),
           elevation: 0,
         ),
         body: Column(
           children: [
-            Row(children: [Text('مرحبا بك في الصفحة الرئيسية')]),
+            Row(
+              children: [
+                Text(
+                  'مرحبا بك في الصفحة الرئيسية',
+                  style: AppStyles.textStyle16,
+                ),
+              ],
+            ),
           ],
         ),
       ),
