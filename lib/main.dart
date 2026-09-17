@@ -1,6 +1,7 @@
-import 'package:durosy/features/bottom_nav_bar/presentation/manager/cubit/bottom_nav_cubit.dart';
+import 'package:durosy/core/constants/app_colors.dart';
 import 'package:durosy/features/bottom_nav_bar/presentation/views/main_view.dart';
- import 'package:flutter/material.dart';
+import 'package:durosy/features/botton_nav_bar/presentation/manager/cubit/bottom_nav_cubit.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -16,6 +17,22 @@ class Durosy extends StatelessWidget {
     return BlocProvider(
       create: (context) => BottomNavCubit(),
       child: MaterialApp(
+        theme: ThemeData(
+          useMaterial3: true,
+          scaffoldBackgroundColor: AppColors.background,
+          colorScheme: ColorScheme.light(
+            primary: AppColors.primary,
+            secondary: AppColors.secondary,
+            surface: AppColors.card,
+            onPrimary: Colors.white,
+            onSurface: AppColors.textPrimary,
+          ),
+          appBarTheme: AppBarTheme(
+            backgroundColor: AppColors.background,
+            foregroundColor: AppColors.textPrimary,
+            elevation: 0,
+          ),
+        ),
         locale: const Locale('ar'),
 
         supportedLocales: const [Locale('ar')],
