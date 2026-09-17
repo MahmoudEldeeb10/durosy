@@ -1,3 +1,4 @@
+import 'package:durosy/features/home/presentation/view/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,11 +10,6 @@ class Durosy extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Durosy')),
-        body: const Center(child: Text('Hello World!')),
-      ),
-    );
+    return MaterialApp(home: HomeView());
   }
 }
