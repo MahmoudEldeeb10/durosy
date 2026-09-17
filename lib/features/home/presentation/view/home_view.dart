@@ -1,3 +1,4 @@
+import 'package:durosy/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -5,6 +6,20 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Center(child: Text('Home')));
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          leading: Image.asset('assets/images/logo1.png'),
+
+          title: Text('الرئيسية'),
+          elevation: 0,
+        ),
+        body: Column(
+          children: [
+            Row(children: [Text('مرحبا بك في الصفحة الرئيسية')]),
+          ],
+        ),
+      ),
+    );
   }
 }
