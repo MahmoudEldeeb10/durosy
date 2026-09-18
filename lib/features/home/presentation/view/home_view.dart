@@ -1,4 +1,3 @@
-import 'package:durosy/core/constants/app_colors.dart';
 import 'package:durosy/core/constants/styles.dart';
 import 'package:flutter/material.dart';
 

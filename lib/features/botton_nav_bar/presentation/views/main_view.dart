@@ -1,5 +1,6 @@
 import 'package:durosy/core/constants/app_colors.dart';
 import 'package:durosy/features/botton_nav_bar/presentation/manager/cubit/bottom_nav_cubit.dart';
+import 'package:durosy/features/courses/presentation/view/courses_view.dart';
 import 'package:durosy/features/home/presentation/view/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,7 +8,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class MainView extends StatelessWidget {
   MainView({super.key});
 
-  final List pages = [HomeView(), HomeView()];
+  final List pages = [HomeView(), CoursesView()];
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +53,7 @@ class MainView extends StatelessWidget {
                 label: 'الرئيسية',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.book_rounded),
+                icon: Icon(Icons.book),
                 label: 'الكورسات',
               ),
             ],
