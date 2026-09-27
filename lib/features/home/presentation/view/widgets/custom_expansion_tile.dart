@@ -1,3 +1,4 @@
+import 'package:durosy/features/videos/presentation/view/videos_view.dart';
 import 'package:flutter/material.dart';
 
 class CustomExpansionTile extends StatelessWidget {
@@ -18,40 +19,85 @@ class CustomExpansionTile extends StatelessWidget {
         title: title,
 
         children: [
-          ListTile(
-            iconColor: Colors.red.shade400,
-            leading: Icon(Icons.video_library),
-            title: Text('الدرس الأول'),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      (VideosView(lessonTitle: 'الدرس الأول')),
+                ),
+              );
+            },
+
+            child: ListTile(
+              iconColor: Colors.red.shade400,
+              leading: Icon(Icons.video_library),
+              title: Text('الدرس الأول'),
+            ),
           ),
           ListTile(
             iconColor: Colors.blue.shade400,
             leading: Icon(Icons.assignment),
             title: Text('الامتحان الأول'),
           ),
-          ListTile(
-            iconColor: Colors.red.shade400,
-            leading: Icon(Icons.video_library),
-            title: Text('الدرس الثاني'),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      (VideosView(lessonTitle: 'الدرس الثاني')),
+                ),
+              );
+            },
+            child: ListTile(
+              iconColor: Colors.red.shade400,
+              leading: Icon(Icons.video_library),
+              title: Text('الدرس الثاني'),
+            ),
           ),
           ListTile(
             iconColor: Colors.blue.shade400,
             leading: Icon(Icons.assignment),
             title: Text('الامتحان الثاني'),
           ),
-          ListTile(
-            iconColor: Colors.red.shade400,
-            leading: Icon(Icons.video_library),
-            title: Text('الدرس الثالث'),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      (VideosView(lessonTitle: 'الدرس الثالث')),
+                ),
+              );
+            },
+            child: ListTile(
+              iconColor: Colors.red.shade400,
+              leading: Icon(Icons.video_library),
+              title: Text('الدرس الثالث'),
+            ),
           ),
           ListTile(
             iconColor: Colors.blue.shade400,
             leading: Icon(Icons.assignment),
             title: Text('الامتحان الثالث'),
           ),
-          ListTile(
-            leading: Icon(Icons.video_library),
-            iconColor: Colors.red.shade400,
-            title: Text('الدرس الرابع'),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      (VideosView(lessonTitle: 'الدرس الرابع')),
+                ),
+              );
+            },
+            child: ListTile(
+              leading: Icon(Icons.video_library),
+              iconColor: Colors.red.shade400,
+              title: Text('الدرس الرابع'),
+            ),
           ),
           ListTile(
             leading: Icon(Icons.assignment),
