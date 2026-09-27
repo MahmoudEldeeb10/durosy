@@ -29,7 +29,6 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.8
-  easy_date_timeline: ^2.0.9
   equatable: ^3.0.0
   flutter:
     sdk: flutter
