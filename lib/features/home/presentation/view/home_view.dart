@@ -14,7 +14,7 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Image.asset('assets/images/logo1.png'),
+        leading: Image.asset('assets/images/logo2.png'),
         title: Text('مرحبا محمود', style: AppStyles.textStyle20),
         elevation: 0,
       ),
