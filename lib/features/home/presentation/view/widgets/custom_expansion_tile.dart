@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomExpansionTile extends StatelessWidget {
-  const CustomExpansionTile({super.key});
+  final Text title;
+
+  const CustomExpansionTile({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +15,7 @@ class CustomExpansionTile extends StatelessWidget {
       ),
       child: ExpansionTile(
         // backgroundColor: Colors.blue.shade50,
-        title: const Text(
-          'الوحدة الأولى',
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-        ),
+        title: title,
 
         children: [
           ListTile(

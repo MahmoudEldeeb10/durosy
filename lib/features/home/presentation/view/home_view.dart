@@ -20,13 +20,27 @@ class _HomeViewState extends State<HomeView> {
       ),
       body: ListView(
         children: [
-          CustomExpansionTile(),
-          CustomExpansionTile(),
-          CustomExpansionTile(),
-          CustomExpansionTile(),
-          CustomExpansionTile(),
-          CustomExpansionTile(),
-          CustomExpansionTile(),
+          CustomExpansionTile(
+            title: const Text('الوحدة الأولى', style: AppStyles.textStyle20),
+          ),
+          CustomExpansionTile(
+            title: const Text('الوحدة الثانية', style: AppStyles.textStyle20),
+          ),
+          CustomExpansionTile(
+            title: const Text('الوحدة الثالثة', style: AppStyles.textStyle20),
+          ),
+          CustomExpansionTile(
+            title: const Text('الوحدة الرابعة', style: AppStyles.textStyle20),
+          ),
+          CustomExpansionTile(
+            title: const Text('الوحدة الخامسة', style: AppStyles.textStyle20),
+          ),
+          CustomExpansionTile(
+            title: const Text('الوحدة السادسة', style: AppStyles.textStyle20),
+          ),
+          CustomExpansionTile(
+            title: const Text('الوحدة السابعة', style: AppStyles.textStyle20),
+          ),
         ],
       ),
     );
