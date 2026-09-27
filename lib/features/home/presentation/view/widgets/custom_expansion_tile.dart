@@ -1,3 +1,4 @@
+import 'package:durosy/features/exams/presentation/view/exams_view.dart';
 import 'package:durosy/features/videos/presentation/view/videos_view.dart';
 import 'package:flutter/material.dart';
 
@@ -29,18 +30,30 @@ class CustomExpansionTile extends StatelessWidget {
                 ),
               );
             },
-
+            // -------------------------------------------
             child: ListTile(
               iconColor: Colors.red.shade400,
               leading: Icon(Icons.video_library),
               title: Text('الدرس الأول'),
             ),
           ),
-          ListTile(
-            iconColor: Colors.blue.shade400,
-            leading: Icon(Icons.assignment),
-            title: Text('الامتحان الأول'),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      (ExamsView(lessonTitle: 'الامتحان الأول')),
+                ),
+              );
+            },
+            child: ListTile(
+              iconColor: Colors.blue.shade400,
+              leading: Icon(Icons.assignment),
+              title: Text('الامتحان الأول'),
+            ),
           ),
+          //-------------------------------------------
           GestureDetector(
             onTap: () {
               Navigator.push(
@@ -57,11 +70,24 @@ class CustomExpansionTile extends StatelessWidget {
               title: Text('الدرس الثاني'),
             ),
           ),
-          ListTile(
-            iconColor: Colors.blue.shade400,
-            leading: Icon(Icons.assignment),
-            title: Text('الامتحان الثاني'),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      (ExamsView(lessonTitle: 'الامتحان الثاني')),
+                ),
+              );
+            },
+            child: ListTile(
+              iconColor: Colors.blue.shade400,
+              leading: Icon(Icons.assignment),
+              title: Text('الامتحان الثاني'),
+            ),
           ),
+
+          //-------------------------------------------
           GestureDetector(
             onTap: () {
               Navigator.push(
@@ -78,11 +104,23 @@ class CustomExpansionTile extends StatelessWidget {
               title: Text('الدرس الثالث'),
             ),
           ),
-          ListTile(
-            iconColor: Colors.blue.shade400,
-            leading: Icon(Icons.assignment),
-            title: Text('الامتحان الثالث'),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      (ExamsView(lessonTitle: 'الامتحان الثالث')),
+                ),
+              );
+            },
+            child: ListTile(
+              iconColor: Colors.blue.shade400,
+              leading: Icon(Icons.assignment),
+              title: Text('الامتحان الثالث'),
+            ),
           ),
+          //-------------------------------------------
           GestureDetector(
             onTap: () {
               Navigator.push(
@@ -99,10 +137,21 @@ class CustomExpansionTile extends StatelessWidget {
               title: Text('الدرس الرابع'),
             ),
           ),
-          ListTile(
-            leading: Icon(Icons.assignment),
-            iconColor: Colors.blue.shade400,
-            title: Text('الامتحان الرابع'),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      (ExamsView(lessonTitle: 'الامتحان الرابع')),
+                ),
+              );
+            },
+            child: ListTile(
+              leading: Icon(Icons.assignment),
+              iconColor: Colors.blue.shade400,
+              title: Text('الامتحان الرابع'),
+            ),
           ),
         ],
       ),
