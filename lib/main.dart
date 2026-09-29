@@ -1,4 +1,5 @@
 import 'package:durosy/core/constants/app_colors.dart';
+import 'package:durosy/features/auth/presentation/view/signin_view.dart';
 import 'package:durosy/features/home/presentation/view/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -44,7 +45,7 @@ class Durosy extends StatelessWidget {
       },
 
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      home: SigninView(),
     );
   }
 }
